@@ -1,1 +1,352 @@
 @charset "utf-8";
+
+.is-halfbox {
+  width: 50%;
+}
+
+.is-fullbox {
+  width: 100%;
+}
+
+.border {
+  text-decoration: none;
+}
+
+.input-init {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  padding: 0;
+  background: transparent;
+  border: none;
+  outline: none;
+  resize: none;
+}
+
+.is-border {
+  box-sizing: border-box;
+  border: solid 1px #d9d9d9;
+  border-radius: 3px;
+  height: 36px;
+  width: 100%;
+  padding: 5px;
+  color: #545658;
+  font-size: 13px;
+  line-height: 2;
+  margin-top: 5px;
+  background-color: #fbfbfb;
+}
+
+.is-border:focus {
+  border-color: rgba(59, 133, 133, .4);
+  box-shadow: 0 0 0 2px rgb(1 191 189 / 10%);
+  background-color: #fff;
+  outline: none;
+}
+
+.wrapper {
+  width: 100%;
+  background-color: #f2f6f7;
+  padding: 32px 0;
+}
+
+.label {
+  display: block;
+  font-size: 12px;
+  color: #545658;
+}
+
+.inner {
+  margin: 0 auto;
+  width: 640px;
+}
+
+.main {
+  padding: 48px 64px;
+  background-color: #fff;
+  border-radius: 4px;
+  box-shadow: 0 0 4px 0 rgb(0 0 0 / 18%);
+}
+
+.form-title {
+  font-size: 24px;
+  text-align: center;
+  color: #545658;
+}
+
+.info {
+  margin-top: 20px;
+}
+
+.required {
+  color: #db4437;
+}
+
+.choices {
+  font-size: 17px;
+  font-weight: 100;
+  vertical-align: middle;
+  color: #4e4e4e;
+}
+
+.login {
+  display: flex;
+  margin-top: 8px;
+}
+
+.login:last-child {
+  margin-left: 8px;
+}
+
+.is-button {
+  box-sizing: border-box;
+  display: inline-block;
+  text-align: center;
+  padding: 13px;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  border: 1px solid #d9d9d9;
+  border-radius: 3px;
+  transition: 0.3s;
+}
+
+.is-facebook {
+  background-color: #3b5988;
+  color: #fff;
+  border-color: #3b5988;
+}
+
+.is-facebook:hover {
+  background-color: #2f477a;
+}
+
+.is-google {
+  background-color: #fff;
+  color: #db4437;
+}
+
+.is-google:hover {
+  background-color: #f5f5f5;
+}
+
+.is-text {
+  text-align: center;
+  font-size: 12px;
+  color: #949697;
+}
+
+.remarks {
+  margin-top: 8px;
+}
+
+.accountInfo {
+  margin: 20px 0;
+  position: relative;
+  text-align: center;
+}
+
+.accountInfo::before {
+  content: "";
+  display: block;
+  height: 1px;
+  background-color: #ececec;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+  width: 100%;
+}
+
+.accountInfo .is-text {
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+  padding: 0 10px;
+}
+
+
+/* 名前 */
+
+.name-box {
+  display: flex;
+}
+
+.name:last-child {
+  margin-left: 20px;
+}
+
+/* 性別 */
+
+input {
+  vertical-align: middle;
+}
+
+.jender-boxes {
+  display: flex;
+  color: #545658;
+  font-size: 16px;
+}
+
+.jender-box {
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.jender-box input, .course-box input {
+  display: none;
+}
+
+.jender-box:first-child {
+  margin-left: 0;
+}
+
+.jender-box span {
+  position: relative;
+  display: inline-block;
+  padding: 3px 3px 3px 20px;
+}
+
+.jender-box span::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 14px;
+  width: 14px;
+  background-color: #fbfbfb;
+  border: 1px solid #d9d9d9;
+  border-radius: 50%;
+}
+
+.radio-input:checked + span::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 50%;
+  height: 8px;
+  width: 8px;
+  transform: translateY(-50%);
+  border-radius: 50%;
+  color: #01bfdb;
+}
+
+/* 出身 */
+
+.select-area {
+  position: relative;
+}
+
+.select-area::after {
+  content: "";
+  display: inline-block;
+  position: absolute;
+  right: 10px;
+  top: 45%;
+  transform: rotate(45deg);
+  height: 5px;
+  width: 5px;
+  border-right: 2px solid #d9d9d9;
+  border-bottom: 2px solid #d9d9d9;
+}
+
+
+/* 希望コース */
+
+.is-checkbox {
+  padding-top: 5px;
+  color: #545658;
+  font-size: 16px;
+}
+
+.choices {
+  position: relative;
+  padding-left: 25px;
+}
+
+.choices::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  height: 15px;
+  width: 15px;
+  margin-top: -8px;
+  border: 1px solid #d9d9d9;
+}
+
+.is-checkbox input:checked + .choices::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: rotate(45deg);
+  height: 16px;
+  width: 8px;
+  margin-top: -12px;
+  border-right: 3px solid #01bfbd;
+  border-bottom: 3px solid #01bfbd;
+}
+
+
+/* 備考 */
+
+.remark-box .is-border {
+  height: 100px;
+}
+
+
+/* アカウント作成ボタン */
+
+.button-box {
+  margin-top: 20px;
+  align-items: center;
+  background-color: #01a6a4;
+  border: solid 1px #d2d2d2;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.button-box:hover {
+  background-color: #017775;
+}
+
+.button-text {
+  padding: 10px 0;
+  color: #fff;
+}
+
+.policy {
+  margin-top: 20px;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.is-link {
+  color: #01a6a4;
+}
+
+.is-link:hover {
+  color: #017775;
+}
+
+.footer-part {
+  margin-top: 30px;
+}
+
+.footer-text {
+  text-align: center;
+  font-size: 12px;
+}
+
+.resend-mail {
+  display: inline-block;
+  margin-top: 8px;
+}
+
+.footer-part .footer-text .is-link {
+  line-height: 16px;
+  font-size: 12px;
+}

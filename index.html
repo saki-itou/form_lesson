@@ -10,6 +10,166 @@
     <link rel="stylesheet" href="./assets/css/style.css">
   </head>
   <body>
+    <section class="wrapper">
+      <div class="inner">
+        <div class="main">
+          <h1 class="form-title">アカウント作成</h1>
+          <div class="login">
+            <div class="login is-halfbox">
+              <a href="" class="is-button is-fullbox border is-facebook">Facebookでスタート</a>
+            </div>
+            <div class="login is-halfbox">
+              <a href="" class="is-button is-fullbox border is-google">Googleでスタート</a>
+            </div>
+          </div>
+          <p class="remarks is-text">タイムラインへ投稿を行うことや、アカウント情報を伝えることはありません。</p>
+          <div class="accountInfo">
+            <p class="is-text">アカウント情報</p>
+          </div>
+          <form class="formInfo" action="#" method="POST">
+            <div class="info name-box">
+              <div class="name is-halfbox">
+              <p class="label">
+                名字
+                <span class="required">
+                  ※
+                </span>
+              </p>
+              <input type="text" class="is-border input-init" name="last-name" class="" required>
+              </div>
+              <div class="name is-halfbox">
+              <p class="label">
+                名前
+                <span class="required">
+                  ※
+                </span>
+              </p>
+              <input type="text" class="is-border input-init required" name="fast-name">
+              </div>
+            </div>
+            <!--性別-->
+            <div class="info gender">
+              <p class="label is-fullbox">性別</p>
+              <div class="jender-boxes">
+                <label class="jender-box">
+                  <input type="radio" value="male" name="gender" class="radio-input">
+                  <span>
+                    男性
+                  </span>
+                </label>
+                <label class="jender-box">
+                  <input type="radio" value="female"  name="gender" class="radio-input">
+                  <span>
+                    女性
+                  </span>
+                </label>
+                <label class="jender-box">
+                  <input type="radio" value="other" name="gender" class="radio-input">
+                  <span>
+                    その他
+                  </span>
+                </label>
+              </div>
+            </div>
+            <!--出身-->
+            <div class="info hometown-box is-halfbox">
+              <p class="label">
+                出身
+              </p>
+              <div class="select-area">
+                <select name="hometown" class="input-init is-border hometown-input">
+                  <option>東京</option>
+                  <option>千葉</option>
+                  <option>埼玉</option>
+                  <option>神奈川</option>
+                </select>
+              </div>
+            </div>
+            <!--パスワード-->
+            <div class="info mail-box">
+              <p class="label">
+                Eメール
+                <span class="required">
+                  ※
+                </span>
+              </p>
+              <input type="email" class="is-border is-fullbox" name="email" placeholder="ex) hoge@example.com">
+            </div>
+            <!--電話番号-->
+            <div class="info is-fullbox telefone">
+              <p class="label">
+                電話番号
+              </p>
+              <input type="tel" class="is-border is-fullbox" name="tel" placeholder="ex) 09012345678">
+            </div>
+            <!--パスワード-->
+            <div class="info is-fullbox password-box">
+              <p class="label">
+                パスワード
+                <span class="required">
+                  ※
+                </span>
+              </p>
+              <input type="password" class="is-border is-fullbox" name="password">
+            </div>
+            <div class="info is-fullbox pass-box">
+              <p class="label">
+                パスワード(確認用)
+                <span class="required">
+                  ※
+                </span>
+              </p>
+              <input type="password" class="is-border is-fullbox" name="password">
+            </div>
+            <!--希望コース-->
+            <div class="info course-box">
+              <p class="label">
+                希望コース
+              </p>
+              <div class="is-checkbox">
+                <input type="checkbox" class="checkbox is-choices" name="checkbox" value="front">
+                <label class="choices">フロントエンド</label>
+              </div>
+              <div class="is-checkbox">
+                <input type="checkbox" class="checkbox is-choices" name="checkbox" value="back">
+                  <label class="choices">バックエンド</label>
+              </div>
+              <div class="is-checkbox">
+                <input type="checkbox"  class="checkbox is-choices" name="checkbox" value="app">
+                  <label class="choices">アプリ</label>
+              </div>
+            </div>
+            <!--備考-->
+            <div class="info remark-box">
+              <p class="label">
+                備考
+              </p>
+              <textarea name="freeans" class="is-border input-init is-fullbox" placeholder="何かあればご記入ください"></textarea>
+            </div>
+            <button class="button-box is-fullbox">
+              <p class=button-text>
+              アカウント作成
+              </p>
+            </button>
+            <div class="policy">
+              <p class="text">
+                アカウントを作成することにより、<a href="" class="is-link">利用規約</a>と<a href="" class="is-link">プライバシーポリシー</a>に同意するものとします。
+              </p>
+            </div>
+          </form>
+        </div>
+        <footer class="footer">
+          <div class="footer-part">
+            <p class="footer-text">
+              すでにアカウントをお持ちですか？<a href="" class="is-link">ログイン</a>
+            </p>
+            <p class="footer-text">
+              <a href="" class="is-link resend-mail">認証メールが届きませんか？</a>
+            </p>
+          </div>
+        </footer>
+      </div>
+    </section>
 
   </body>
 </html>
