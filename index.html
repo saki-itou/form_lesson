@@ -15,10 +15,10 @@
         <div class="main">
           <h1 class="form-title">アカウント作成</h1>
           <div class="login">
-            <div class="login is-halfbox">
+            <div class="login-box is-halfbox">
               <a href="" class="is-button is-fullbox border is-facebook">Facebookでスタート</a>
             </div>
-            <div class="login is-halfbox">
+            <div class="login-box is-halfbox">
               <a href="" class="is-button is-fullbox border is-google">Googleでスタート</a>
             </div>
           </div>
@@ -35,7 +35,7 @@
                   ※
                 </span>
               </p>
-              <input type="text" class="is-border input-init" name="last-name" class="" required>
+              <input type="text" class="is-border input-init" name="last-name" required>
               </div>
               <div class="name is-halfbox">
               <p class="label">
@@ -44,7 +44,7 @@
                   ※
                 </span>
               </p>
-              <input type="text" class="is-border input-init required" name="fast-name">
+              <input type="text" class="is-border input-init" name="fast-name" required>
               </div>
             </div>
             <!--性別-->
@@ -85,7 +85,7 @@
                 </select>
               </div>
             </div>
-            <!--パスワード-->
+            <!--Eメール-->
             <div class="info mail-box">
               <p class="label">
                 Eメール
@@ -93,7 +93,7 @@
                   ※
                 </span>
               </p>
-              <input type="email" class="is-border is-fullbox" name="email" placeholder="ex) hoge@example.com">
+              <input type="email" class="is-border is-fullbox" name="email" placeholder="ex) hoge@example.com" required>
             </div>
             <!--電話番号-->
             <div class="info is-fullbox telefone">
@@ -110,7 +110,7 @@
                   ※
                 </span>
               </p>
-              <input type="password" class="is-border is-fullbox" name="password">
+              <input type="password" class="is-border is-fullbox" name="password" required>
             </div>
             <div class="info is-fullbox pass-box">
               <p class="label">
@@ -119,7 +119,7 @@
                   ※
                 </span>
               </p>
-              <input type="password" class="is-border is-fullbox" name="password">
+              <input type="password" class="is-border is-fullbox" name="password" required>
             </div>
             <!--希望コース-->
             <div class="info course-box">
@@ -146,8 +146,9 @@
               </p>
               <textarea name="freeans" class="is-border input-init is-fullbox" placeholder="何かあればご記入ください"></textarea>
             </div>
-            <button class="is-button button-box is-fullbox">アカウント作成
-            </button>
+            <div class="info">
+              <input type="submit" value="アカウント作成" class="input-init  button-box is-button is-fullbox">
+            </div>
             <div class="policy">
               <p class="text">
                 アカウントを作成することにより、<a href="" class="is-link">利用規約</a>と<a href="" class="is-link">プライバシーポリシー</a>に同意するものとします。
